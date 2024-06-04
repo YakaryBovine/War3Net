@@ -26,10 +26,10 @@ namespace War3Net.Common.Extensions
         {
             return new string(new[]
             {
-                (char)(value & 0x000000FF),
-                (char)((value & 0x0000FF00) >> 8),
-                (char)((value & 0x00FF0000) >> 16),
                 (char)((value & 0xFF000000) >> 24),
+                (char)((value & 0x00FF0000) >> 16),
+                (char)((value & 0x0000FF00) >> 8),
+                (char)(value & 0x000000FF),
             });
         }
 
